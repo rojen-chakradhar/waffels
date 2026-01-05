@@ -67,3 +67,8 @@ function changeLayout() {
 		i=0;
 	}
 }
+
+function showRecipe() {
+	let recipe = document.getElementById('recipe');
+	recipe.style.display = 'block';
+}

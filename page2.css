@@ -1,20 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  scroll-behavior: smooth;
-  /*outline: 1px dotted red;*/
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.hero {
+  padding: 0.5rem 5vw;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+p {
+  font-size: 5vw;
+  font-weight: 900;
+  color: #eee;
+}
+
+span {
+  font-size: 8vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #daa442;
+}
+
+.ext {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.image {
+  height: 300px;
+  width: 450px;
+  margin-top: 5vw;
+  border: 1vw solid #222;
+  outline: 1vw solid #daa442;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn {
+  margin-top: 5vw;
+  padding: 1vw 5vw;
+  border: none;
+  font-size: 2vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #111;
+  box-shadow: 5px 5px 0 #222;
+  background-color: #daa442;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 7px 10px 0 #222;
+  }
+  &:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0 #222;
+  }
+}
+
+.recipe {
+  display: none;
+  margin-top: 5vw;
+  color: #eee;
+  ul,ol {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  h3 {
+    margin-top: 2vw;
+    font-size: 2vw;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #daa442;
+  }
+  li {
+    font-size: 1.5vw;
+    font-weight: 500;
+    list-style:decimal;
+  }
+  ol li{
+    list-style:disc;
+  }
+  strong {
+    font-weight: 600;
+    color: #daa442;
+  }
 }
