@@ -3,11 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page2 | Waffels</title>
+    <title>Page2 | Waffles</title>
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/iconarchive/fat-sugar-food/256/Waffles-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
+    <main>
+      <nav>
+        <a href="./index.html"><h2>waffles</h2></a>
+        <i class="ri-menu-line menu-icon" onclick="openMenu()"></i>
+      </nav>
+      <section class="menu" id="menu">
+        <i class="ri-close-large-line close-icon" onclick="closeMenu()"></i>
+        <ul class="links">
+          <a href="./index.html"><h1 class="link">page 1</h1></a>
+          <a href="./page2.html"><h1 class="link">page 2</h1></a>
+        </ul>
+      </section>
+      <section class="hero">
+        <img src="https://cravinghomecooked.com/wp-content/uploads/2019/02/easy-waffle-recipe-1-16.jpg" alt="waffel image" class="image" id="image">
+        <div class="btns">
+          <button class="btn" onclick="moreWaffles()">more waffles</button>
+          <button class="btn" onclick="changeLayout()">change layout</button>
+        </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
